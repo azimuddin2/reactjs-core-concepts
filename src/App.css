@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.person{
+  background-color: #282c34ea;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.friend {
+  background-color: coral;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.product {
+  background-color:bisque;
+  color: black;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.count-container{
+  border: 3px solid orangered;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.user {
+  border: 3px solid cornflowerblue;
+  color: black;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
