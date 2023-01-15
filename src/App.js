@@ -16,8 +16,8 @@ function App() {
 
 
   const persons = [
-    { id: 1, name: 'Azim', job: 'Web Developer' },
-    { id: 2, name: 'Masuam', job: 'Graphic Design' },
+    { id: 1, name: 'Azim', job: 'Full Stack Web Developer (Front-end & Back-end)' },
+    { id: 2, name: 'Masuam', job: 'Graphic Designer' },
     { id: 3, name: 'Rakib', job: 'MERN Developer' },
     { id: 4, name: 'Rahat', job: 'WordPress Developer' },
   ]
@@ -33,8 +33,8 @@ function App() {
     <div className="App">
       <div className='count-container'>
         <h1>Count: {count}</h1>
-        <button onClick={increaseCount}>Increase</button>
-        <button onClick={decreaseCount}>Decrease</button>
+        <button style={{marginRight: '10px'}} onClick={increaseCount}>+</button>
+        <button onClick={decreaseCount}>-</button>
       </div>
       <h1>Q) What is JSX? <span>Ans: JavaScript XML.</span></h1>
       {
@@ -83,6 +83,7 @@ function Person(props) {
 }
 
 function Friend(props) {
+  console.log(props)
   return (
     <div className='friend'>
       <h2>{props.language}</h2>
