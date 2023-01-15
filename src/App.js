@@ -7,12 +7,15 @@ function App() {
   const increaseCount = () => {
     const newCount = count + 1;
     setCount(newCount);
-  }
+  };
 
   const decreaseCount = () => {
     const newCount = count - 1;
     setCount(newCount);
-  }
+  };
+
+  // const increaseCount = () => setCount(count + 1);
+  // const decreaseCount = () => setCount(count - 1);
 
 
   const persons = [
@@ -33,7 +36,7 @@ function App() {
     <div className="App">
       <div className='count-container'>
         <h1>Count: {count}</h1>
-        <button style={{marginRight: '10px'}} onClick={increaseCount}>+</button>
+        <button onClick={increaseCount} style={{ marginRight: "10px" }}>+</button>
         <button onClick={decreaseCount}>-</button>
       </div>
       <h1>Q) What is JSX? <span>Ans: JavaScript XML.</span></h1>
@@ -105,6 +108,7 @@ function Product(props) {
 
 const ExternalUsers = () => {
   const [users, setUsers] = useState([]);
+
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => res.json())
